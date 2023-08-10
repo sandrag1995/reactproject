@@ -1,34 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.flex-2{
+  flex: 2;
+}
+
+.m-10{
+  margin: 10px;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+/*//////////task1//////////*/
+
+.ChangeInfo{
+  display: flex;
+  gap: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*///////////task2/////////////////*/
+
+
+.ChangeInfo div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
 }
 
-@keyframes App-logo-spin {
+/*//////////////task3 - cookie clicker////////////////////*/
+
+.gameContainer{
+  justify-content: center;
+  align-items: center;
+}
+
+.cookieScreen{
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.cookieScreen img:hover{
+  cursor: pointer;
+}
+
+.upgradeMenu div{
+  height: 50px;
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.upgradeMenu div:hover{
+  cursor: pointer;
+}
+
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -36,3 +73,132 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*///////////////Task 4//////////////////*/
+
+.card{
+  width: 350px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/*///////////////////Task 5/////////////////////////*/
+
+.colorField{
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+}
+
+/*////////////////////TASK 6/////////////////////////////*/
+
+/*body{*/
+/*  background-color: #34393a;*/
+/*!*}*! for that task6 only*/
+
+.productCard{
+  background-color: #94a3a9;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 430px;
+}
+
+.imageContainer button{
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.imageContainer button:hover{
+  color: black;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.imageContainer{
+  position: relative;
+}
+
+.imageContainer img{
+  width: 100%;
+  height: 300px;
+}
+
+.leftSide{
+  top: 130px;
+  left: 10px;
+}
+
+.rightSide{
+  top: 130px;
+  right: 10px;
+}
+
+
+/*///////////////////////TASK 7//////////////////////*/
+
+.box{
+  height: 500px;
+}
+
+.colorBox{
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.container1{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addedColors{
+  height: 100%;
+}
+
+.progress{
+  width: 50px;
+  height: 80%;
+  border: 2px solid black;
+  position: relative;
+}
+
+.filledProgress{
+  width: 100%;
+  background-color: #0a53be;
+  position: absolute;
+  bottom: 0;
+}
+
+.addedBoxes{
+  border: 2px solid black;
+  height: 90%;
+  width: 500px;
+  align-content: flex-start;
+}
+
+/*////////////////TASK 8///////////////////////*/
+
+.colorCard{
+  padding: 10px;
+  border: 5px solid gray;
+  border-radius: 20px;
+  margin: 10px;
+  width: 350px;
+}
+
+.smallCard{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
