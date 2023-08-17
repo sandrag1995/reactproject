@@ -42,6 +42,19 @@ function App() {
             validationErrors.push("Your entered passwords don't match!");
         }
 
+        const hasUpperCase = /[A-Z]/.test(password1Value);
+        const hasDigit = /\d/.test(password1Value);
+
+        if (password1Value.length < 5){
+            validationErrors.push("Your password is too short!");
+        } else if (password1Value.length > 20){
+            validationErrors.push("Your password is too long!");
+        } else if (!hasUpperCase) {
+            validationErrors.push("Your password must contain at least one uppercase letter!");
+        } else if (!hasDigit) {
+            validationErrors.push("Your password must contain at least one digit!");
+        }
+
         const phoneError = validatePhoneNumber(phoneValue);
         if (phoneError) {
             validationErrors.push(phoneError);
