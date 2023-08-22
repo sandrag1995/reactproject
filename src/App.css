@@ -10,6 +10,10 @@
   flex: 2;
 }
 
+.flex-3{
+  flex: 3;
+}
+
 .m-10{
   margin: 10px;
 }
@@ -361,3 +365,156 @@ input{
 .registrationForm button{
   padding: 10px;
 }
+
+/*/////////////////TASK 13/CHAT APP/////////////////*/
+
+.chatApp{
+  flex-direction: column;
+  background-color: #91b0e5;
+}
+
+.chatApp h1{
+  color: white;
+}
+
+.sentMsg{
+  height: 500px;
+  border: 8px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: scroll;
+  background-color: #1a1d20;
+}
+
+.userInputs button{
+  padding: 5px;
+}
+
+input{
+  width: 300px;
+}
+
+.message{
+  width: 500px;
+  padding: 10px;
+  border: 5px solid gray;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #948d8d;
+}
+
+.message span{
+  font-weight: bold;
+}
+
+/*////////////////TASK 14///////////////////////*/
+
+.userToolbar{
+  padding: 10px;
+  background-color: gray;
+  justify-content: flex-start;
+}
+
+.userToolbar button{
+  margin: 5px;
+}
+
+.loginForm, .registerForm{
+  padding: 10px;
+  border: 5px solid gray;
+  border-radius: 20px;
+}
+
+.users,
+.chatField{
+  padding: 10px;
+  border: 5px solid gray;
+  border-radius: 20px;
+  background-color: #2b2f32;
+}
+
+.userList,
+.messageField{
+  height: 550px;
+  padding: 10px;
+  overflow: scroll;
+  border: 5px solid #4343e7;
+  border-radius: 20px;
+}
+
+.messageField{
+  background-color: #747f86;
+  width: 600px;
+}
+
+.userList{
+  background-color: #2b2f32;
+  height: 500px;
+  border: 3px solid aqua;
+  border-radius: 20px;
+}
+
+
+.user{
+  padding: 10px;
+  background-color: #a0a7af;
+  /*border: 3px solid lightseagreen;*/
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.userNameStyle{
+  color: #bdbbbb;
+  background-color: #2b2f32;
+  padding: 5px;
+  border: 3px solid darkslategray;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+
+.userNameStyle:hover{
+  cursor: pointer;
+  color: #1a1d20;
+}
+
+.receivedMessage{
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 400px;
+  padding: 10px;
+  background-color: #5aa0f1;
+  border-radius: 20px;
+}
+
+.sentMessage{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 160px;
+  width: 400px;
+  padding: 10px;
+  background-color: #a271b7;
+  border-radius: 20px;
+}
+
+.loginUserMessage span{
+  font-weight: bold;
+}
+
+/*////////////////////TASK15 CAT AND DOG  APP//////////////////*/
+
+.gap-20{
+  gap: 20px;
+}
+
+.post{
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid #484444;
+  border-radius: 20px;
+  background-color: #969393;
+}
+
+.post h4{
+  cursor: pointer;
+}
+
