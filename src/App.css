@@ -518,3 +518,53 @@ input{
   cursor: pointer;
 }
 
+/*/////////////////////TASK16////////////////////*/
+
+.toolbar{
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 20px;
+}
+
+.userRegistration,
+.userLogin{
+  width: 500px;
+  padding: 10px;
+  flex-direction: column;
+  border: 5px solid gray;
+  border-radius: 20px;
+}
+
+.userCard h4{
+  cursor: pointer;
+}
+
+.userCard h4:hover{
+ color: darkviolet;
+}
+
+/*/////////////////Task 18//////////////////*/
+
+.userField,
+.changeColor,
+.changeText{
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 20px;
+}
+
+.color-box{
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.user-card{
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 20px;
+  margin: 10px;
+}

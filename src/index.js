@@ -3,13 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter} from "react-router-dom"
+import {configureStore} from "@reduxjs/toolkit"
+import {Provider} from "react-redux"
 
+import userReducer from "./features/user"
+import colorReducer from "./features/colorcont"
+import favUserReducer from "./features/favuserlist"
+const store = configureStore({
+    reducer:{
+        user: userReducer,
+        color: colorReducer,
+        favuser: favUserReducer
+    }
+})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-          <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
