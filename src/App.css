@@ -568,3 +568,169 @@ input{
   border-radius: 20px;
   margin: 10px;
 }
+
+/*/////////////////Monopoly game///////////////////*/
+
+.startScreen{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/011/166/641/non_2x/fake-play-money-background-free-vector.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.game{
+  background-image: url("https://images-na.ssl-images-amazon.com/images/S/pv-target-images/aa22f7bd40726af6afd9c54799b3cbe996ade4542b502f08f8d64e832f2e18b1._RI_TTW_.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.figures{
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 20px;
+  background-color: rgba(190, 255, 173, 0.42);
+}
+
+.figure{
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.figure img{
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+
+.startBtn{
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.board{
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  position: relative;
+}
+
+.cell {
+  height: 230px;
+  width: 185px;
+  background-color: white;
+  border: 2px solid black;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cell.occupied {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.cell button{
+  margin: 10px;
+}
+
+.cell:first-child{
+  background-image: url("https://www.clipartmax.com/png/small/335-3351523_monopoly-board-start.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cell:nth-child(2) .street-name,
+.cell:nth-child(3) .street-name,
+.cell:nth-child(4) .street-name{
+  background-color: red;
+}
+
+.cell:nth-child(5) .street-name,
+.cell:nth-child(6) .street-name,
+.cell:nth-child(12) .street-name{
+  background-color: yellow;
+}
+
+.cell:nth-child(18) .street-name,
+.cell:nth-child(23) .street-name,
+.cell:nth-child(24) .street-name{
+  background-color: green;
+}
+
+.cell:nth-child(21) .street-name,
+.cell:nth-child(22) .street-name,
+.cell:nth-child(20) .street-name{
+  background-color: navy;
+}
+
+.cell:nth-child(7) .street-name,
+.cell:nth-child(13) .street-name,
+.cell:nth-child(19) .street-name{
+  background-color: orange;
+}
+
+
+.cell:nth-child(8),
+.cell:nth-child(9),
+.cell:nth-child(10),
+.cell:nth-child(11),
+.cell:nth-child(14),
+.cell:nth-child(15),
+.cell:nth-child(16),
+.cell:nth-child(17){
+  border: none;
+  background-color: transparent;
+}
+
+.street-name{
+  width: 93%;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px;
+  position: absolute;
+  left: -5px;
+}
+
+
+.dice{
+  position: absolute;
+  top: 280px;
+  left: 250px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.buttons button{
+  padding: 10px;
+  font-size: 28px;
+}
+
+.bought-streets{
+  width: 290px;
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 20px;
+  background-color: rgba(194, 255, 179, 0.46);
+}
+
+.bought-streets button{
+  margin-left: 10px;
+  padding: 5px;
+}
+
+li{
+  list-style: "🏠";
+}
+
+
+
+

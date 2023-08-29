@@ -1,27 +1,19 @@
 import './App.css';
-import AllUsers from "./pages/task18pages/AllUsers";
-import FavUser from "./pages/task18pages/FavUser";
-
-import Toolbar from "./components/task18comp/Toolbar"
-
-
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 
-
 import React from "react"
-
+import PlayerStart from "./pages/monopolypages/PlayerStart";
+import GameBoard from "./pages/monopolypages/GameBoard";
 
 
 function App() {
 
-
     return (
         <div>
 <BrowserRouter>
-    <Toolbar/>
     <Routes>
-        <Route path="/" element={<AllUsers/>}/>
-        <Route path="/favusers" element={<FavUser/>}/>
+        <Route path="/" element={<PlayerStart/>}/>
+        <Route path="/gameboard" element={<GameBoard/>}/>
     </Routes>
 </BrowserRouter>
         </div>

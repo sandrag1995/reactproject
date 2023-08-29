@@ -9,11 +9,14 @@ import {Provider} from "react-redux"
 import userReducer from "./features/user"
 import colorReducer from "./features/colorcont"
 import favUserReducer from "./features/favuserlist"
+import playerReducer from "./features/monopoly"
+
 const store = configureStore({
     reducer:{
         user: userReducer,
         color: colorReducer,
-        favuser: favUserReducer
+        favuser: favUserReducer,
+        player: playerReducer
     }
 })
 const root = ReactDOM.createRoot(document.getElementById('root'));
